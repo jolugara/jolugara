@@ -8,11 +8,11 @@
 
 ## 🛠 Tech Stack
 
-•	💻   Java | C++ | C# | SQL | XML | 
+•	💻   Java | C++ | C# | SQL | XML
 
 •	🌐   HTML | CSS | JavaScript | Bootstrap | TypeScript | Ionic | PHP
 
-•	🔧   Visual Studio | Git | Angular | MySQL WorkBench | NetBeans | Eclipse | Oracle | Sublime
+•	🔧   Visual Studio | Git | Angular | MySQL WorkBench | NetBeans | Eclipse | Oracle | Sublime | Android Studio
 
 
 ## Jolu's Github Stats
