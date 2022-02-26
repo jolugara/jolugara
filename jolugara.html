@@ -409,7 +409,7 @@
 </div>
 
     <style>
-*, *::before, *::after {
+      *, *::before, *::after {
   padding: 0;
   margin: 0 auto;
   box-sizing: border-box;
@@ -417,34 +417,186 @@
 
 body {
   background-color: black;
-  height: 100vh; 
+  height: 100vh;
   display: grid;
-  grid-template: repeat(20, 1fr) / repeat(20, 1fr);
+  grid-template: repeat(20, 1fr)/repeat(20, 1fr);
   overflow: hidden;
 }
 
 .cell {
   width: 100%;
   height: 100%;
-  // border: 1px solid #fff1;
   z-index: 2;
 }
 
-@for $i from 0 to 20 {
-  .cell:nth-child(20n + #{$i + 1}):hover ~ .content {
-    --positionX: #{$i};
-  }
-  .cell:nth-child(n + #{20 * $i + 1}):nth-child(-n + #{20 * ($i + 1)}):hover ~ .content {
-    --positionY: #{$i};
-  }
+.cell:nth-child(20n+1):hover ~ .content {
+  --positionX: 0;
+}
+
+.cell:nth-child(n+1):nth-child(-n+20):hover ~ .content {
+  --positionY: 0;
+}
+
+.cell:nth-child(20n+2):hover ~ .content {
+  --positionX: 1;
+}
+
+.cell:nth-child(n+21):nth-child(-n+40):hover ~ .content {
+  --positionY: 1;
+}
+
+.cell:nth-child(20n+3):hover ~ .content {
+  --positionX: 2;
+}
+
+.cell:nth-child(n+41):nth-child(-n+60):hover ~ .content {
+  --positionY: 2;
+}
+
+.cell:nth-child(20n+4):hover ~ .content {
+  --positionX: 3;
+}
+
+.cell:nth-child(n+61):nth-child(-n+80):hover ~ .content {
+  --positionY: 3;
+}
+
+.cell:nth-child(20n+5):hover ~ .content {
+  --positionX: 4;
+}
+
+.cell:nth-child(n+81):nth-child(-n+100):hover ~ .content {
+  --positionY: 4;
+}
+
+.cell:nth-child(20n+6):hover ~ .content {
+  --positionX: 5;
+}
+
+.cell:nth-child(n+101):nth-child(-n+120):hover ~ .content {
+  --positionY: 5;
+}
+
+.cell:nth-child(20n+7):hover ~ .content {
+  --positionX: 6;
+}
+
+.cell:nth-child(n+121):nth-child(-n+140):hover ~ .content {
+  --positionY: 6;
+}
+
+.cell:nth-child(20n+8):hover ~ .content {
+  --positionX: 7;
+}
+
+.cell:nth-child(n+141):nth-child(-n+160):hover ~ .content {
+  --positionY: 7;
+}
+
+.cell:nth-child(20n+9):hover ~ .content {
+  --positionX: 8;
+}
+
+.cell:nth-child(n+161):nth-child(-n+180):hover ~ .content {
+  --positionY: 8;
+}
+
+.cell:nth-child(20n+10):hover ~ .content {
+  --positionX: 9;
+}
+
+.cell:nth-child(n+181):nth-child(-n+200):hover ~ .content {
+  --positionY: 9;
+}
+
+.cell:nth-child(20n+11):hover ~ .content {
+  --positionX: 10;
+}
+
+.cell:nth-child(n+201):nth-child(-n+220):hover ~ .content {
+  --positionY: 10;
+}
+
+.cell:nth-child(20n+12):hover ~ .content {
+  --positionX: 11;
+}
+
+.cell:nth-child(n+221):nth-child(-n+240):hover ~ .content {
+  --positionY: 11;
+}
+
+.cell:nth-child(20n+13):hover ~ .content {
+  --positionX: 12;
+}
+
+.cell:nth-child(n+241):nth-child(-n+260):hover ~ .content {
+  --positionY: 12;
+}
+
+.cell:nth-child(20n+14):hover ~ .content {
+  --positionX: 13;
+}
+
+.cell:nth-child(n+261):nth-child(-n+280):hover ~ .content {
+  --positionY: 13;
+}
+
+.cell:nth-child(20n+15):hover ~ .content {
+  --positionX: 14;
+}
+
+.cell:nth-child(n+281):nth-child(-n+300):hover ~ .content {
+  --positionY: 14;
+}
+
+.cell:nth-child(20n+16):hover ~ .content {
+  --positionX: 15;
+}
+
+.cell:nth-child(n+301):nth-child(-n+320):hover ~ .content {
+  --positionY: 15;
+}
+
+.cell:nth-child(20n+17):hover ~ .content {
+  --positionX: 16;
+}
+
+.cell:nth-child(n+321):nth-child(-n+340):hover ~ .content {
+  --positionY: 16;
+}
+
+.cell:nth-child(20n+18):hover ~ .content {
+  --positionX: 17;
+}
+
+.cell:nth-child(n+341):nth-child(-n+360):hover ~ .content {
+  --positionY: 17;
+}
+
+.cell:nth-child(20n+19):hover ~ .content {
+  --positionX: 18;
+}
+
+.cell:nth-child(n+361):nth-child(-n+380):hover ~ .content {
+  --positionY: 18;
+}
+
+.cell:nth-child(20n+20):hover ~ .content {
+  --positionX: 19;
+}
+
+.cell:nth-child(n+381):nth-child(-n+400):hover ~ .content {
+  --positionY: 19;
 }
 
 .content {
   --positionX: 10;
   --positionY: 10;
-
   position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -457,21 +609,63 @@ body {
   background-image: radial-gradient(#0000, #0007);
   border-radius: 50%;
   transform-origin: center 20px;
-  animation: rotate infinite linear; 
-
-  @for $i from 0 to 5 {
-    &:nth-child(#{$i + 1}) {
-      top: calc(#{1 + (random(30) / 10)}% + var(--positionY) * 5%);
-      left: calc(#{1 + (random(30) / 10)}% + var(--positionX) * 5%);
-      background-color: hsl(360/5*$i, 75%, 75%);
-      animation-duration: #{1 + $i / 10}s;
-      transition: all #{0.3 + $i / 10}s;
-    }
+  -webkit-animation: rotate infinite linear;
+          animation: rotate infinite linear;
+}
+.follower:nth-child(1) {
+  top: calc(3.5% + var(--positionY) * 5%);
+  left: calc(2.9% + var(--positionX) * 5%);
+  background-color: #ef8f8f;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  transition: all 0.3s;
+}
+.follower:nth-child(2) {
+  top: calc(3.3% + var(--positionY) * 5%);
+  left: calc(3.1% + var(--positionX) * 5%);
+  background-color: #dcef8f;
+  -webkit-animation-duration: 1.1s;
+          animation-duration: 1.1s;
+  transition: all 0.4s;
+}
+.follower:nth-child(3) {
+  top: calc(2.9% + var(--positionY) * 5%);
+  left: calc(3.1% + var(--positionX) * 5%);
+  background-color: #8fefb6;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  transition: all 0.5s;
+}
+.follower:nth-child(4) {
+  top: calc(3.8% + var(--positionY) * 5%);
+  left: calc(1.4% + var(--positionX) * 5%);
+  background-color: #8fb6ef;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+  transition: all 0.6s;
+}
+.follower:nth-child(5) {
+  top: calc(2.1% + var(--positionY) * 5%);
+  left: calc(2.6% + var(--positionX) * 5%);
+  background-color: #dc8fef;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+  transition: all 0.7s;
+}
+@-webkit-keyframes rotate {
+  from {
+    transform: translate(-50%, -20px) rotate(0);
   }
-
-  @keyframes rotate {
-    from { transform: translate(-50%, -20px) rotate(0); }
-    to { transform: translate(-50%, -20px) rotate(360deg); }
+  to {
+    transform: translate(-50%, -20px) rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -20px) rotate(0);
+  }
+  to {
+    transform: translate(-50%, -20px) rotate(360deg);
   }
 }
     </style>
