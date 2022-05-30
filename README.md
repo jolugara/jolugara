@@ -10,7 +10,7 @@
 
 •	💻   Java | C# | SQL | XML | Python
 
-•	🌐   HTML | CSS | JavaScript | Bootstrap | TypeScript | Ionic | PHP | Symfony |  twig
+•	🌐   HTML | CSS | JavaScript | Bootstrap | TypeScript | Ionic | PHP | Symfony | Twig
 
 •	🔧   Visual Studio | Git | Angular | MySQL WorkBench | NetBeans | Eclipse | Oracle | Android Studio | PyCharm
 
