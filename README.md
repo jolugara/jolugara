@@ -25,4 +25,4 @@
 
 
 ## 🤝🏻 Connect with Me
-[![110965548-937f0a00-8354-11eb-825e-3e219406e279](https://user-images.githubusercontent.com/33510013/144278613-5880ddc4-3111-4499-be99-d470adebe372.png)](https://www.linkedin.com/in/jose-luis-26121b198/)
+[![110965548-937f0a00-8354-11eb-825e-3e219406e279](https://user-images.githubusercontent.com/33510013/144278613-5880ddc4-3111-4499-be99-d470adebe372.png)](www.linkedin.com/in/jose-luis-garcia-alonso-26121b198)
